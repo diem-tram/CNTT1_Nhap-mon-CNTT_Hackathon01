@@ -1,0 +1,7 @@
+tạo thư mục 
+ New-item -path "sua-may-tinh-website\docs", "sua-may-tinh-website\data", "sua-may-tinh-website\media", "sua-may-tinh-website\backup" -itemType directory
+cd sua-may-tinh-website 
+mkdir bai_lam.md
+
+"bai_lam" | Out-File -FilePath "..\.env" -Encoding utf8   
+(Get-Item "..\.env").Attributes = "Hidden"   
